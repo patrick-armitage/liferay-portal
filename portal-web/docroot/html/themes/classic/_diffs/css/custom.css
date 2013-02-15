@@ -115,6 +115,10 @@ hr, .separator {
 	height: 1%;
 }
 
+.ie7 #banner {
+	z-index: 1;
+}
+
 /* ---------- Main navigation ---------- */
 
 #navigation {
