@@ -248,7 +248,6 @@ Map<String, ThemeSetting> configurableSettings = selTheme.getConfigurableSetting
 	<aui:script use="aui-base">
 		var availableThemes = A.one('#<%= device %>availableThemes');
 		var colorSchemePanel = A.one('#<%= device %>layoutsAdminLookAndFeelColorsPanel');
-		var lookAndFeelForm = A.one('#<%= device %>LookAndFeel');
 
 		var toggleDisabled = function(disabled) {
 			colorSchemePanel.all('input[name=<portlet:namespace /><%= device %>ColorSchemeId]').set('disabled', disabled);
@@ -264,7 +263,7 @@ Map<String, ThemeSetting> configurableSettings = selTheme.getConfigurableSetting
 				);
 			}
 
-			lookAndFeelForm.one('#<portlet:namespace /><%= device %>SelTheme').on(
+			A.one('#<portlet:namespace /><%= device %>SelTheme').on(
 				'change',
 				function() {
 					toggleDisabled(false);
