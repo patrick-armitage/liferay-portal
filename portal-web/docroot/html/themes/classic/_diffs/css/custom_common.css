@@ -36,7 +36,7 @@
 		margin-top: 6px;
 	}
 
-	input[type="text"].search-query {
+	input[type="text"].search-query, .input-append .input {
 		margin-top: 0;
 	}
 
